@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+button {
+  width: 5rem;
+  height: 2rem;
+  align-self: center;
+  margin-top: 2rem;
+  border-radius: 1rem;
+cursor: pointer;
+}
+
