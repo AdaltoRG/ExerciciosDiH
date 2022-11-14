@@ -1,7 +1,7 @@
 const buscaBitcoin = async () => {
   try {
-    const result = fetch('https://api.coincap.io/v2/assets/bitcoin');
-    const { data } = await (await result).json();
+    const result = await fetch('https://api.coincap.io/v2/assets/bitcoin');
+    const { data } = await result.json();
     console.log(
       `O preço do Bitcoin - ${data.symbol} em dólares hoje é $${data.priceUsd}`
     );
