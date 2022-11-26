@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./notification-list.component.scss']
 })
 export class NotificationListComponent {
-
+notificacoes=[
+  {
+    titulo: 'título',
+    data: '22/12/2022',
+    subtitulo:'subtítulo'
+  },
+  {
+    titulo:'teste 2',
+    data:'11/11/2025',
+    subtitulo:'subTeste'
+  }
+]
 }
