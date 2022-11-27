@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./notification-list.component.scss'],
 })
 export class NotificationListComponent {
-  marcarLido(item:any){
-    item.lido = true;        
+  changeLido(item: any) {
+    item.lido = !item.lido;
   }
   notificacoes = [
     {
