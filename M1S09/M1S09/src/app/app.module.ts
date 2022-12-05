@@ -6,6 +6,8 @@ import { FormularioRegistroComponent } from './formulario-registro/formulario-re
 import { ModalComponent } from './formulario-registro/modal/modal.component';
 import { BotaoComponent } from './formulario-registro/botao/botao.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SerieFavoritaComponent } from './serie-favorita/serie-favorita.component';
+import { ItemCardComponent } from './serie-favorita/item-card/item-card.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     FormularioRegistroComponent,
     ModalComponent,
     BotaoComponent,
-    NavbarComponent,],
+    NavbarComponent,
+    SerieFavoritaComponent,
+    ItemCardComponent,],
   imports: [
     BrowserModule
   ],
