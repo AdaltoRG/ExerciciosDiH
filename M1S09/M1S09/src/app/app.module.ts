@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { FormularioRegistroComponent } from './formulario-registro/formulario-registro.component';
 import { ModalComponent } from './formulario-registro/modal/modal.component';
 import { BotaoComponent } from './formulario-registro/botao/botao.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { BotaoComponent } from './formulario-registro/botao/botao.component';
     AppComponent,
     FormularioRegistroComponent,
     ModalComponent,
-    BotaoComponent,],
+    BotaoComponent,
+    NavbarComponent,],
   imports: [
     BrowserModule
   ],
