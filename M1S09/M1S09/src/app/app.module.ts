@@ -8,6 +8,8 @@ import { BotaoComponent } from './formulario-registro/botao/botao.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SerieFavoritaComponent } from './serie-favorita/serie-favorita.component';
 import { ItemCardComponent } from './serie-favorita/item-card/item-card.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,9 +20,11 @@ import { ItemCardComponent } from './serie-favorita/item-card/item-card.componen
     BotaoComponent,
     NavbarComponent,
     SerieFavoritaComponent,
-    ItemCardComponent,],
+    ItemCardComponent,
+    LoginComponent,],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule, //import para o funcionamento do ngModel
   ],
   providers: [],
   bootstrap: [AppComponent]
