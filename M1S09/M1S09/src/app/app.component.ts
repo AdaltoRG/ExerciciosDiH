@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'M1S09';
+  buscar(event:any){
+    console.log(event);
+    
+  }
 }
