@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ContentComponent } from './components/content/content.component';
@@ -9,6 +10,21 @@ import { FiltroComponent } from './components/filtro/filtro.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 
+const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  {
+    path: 'home',
+    component: HomeComponent,
+    children: [
+      {
+        path: '/todos', component: HomeComponent },
+      { path: '/nao-lidos', component: HomeComponent },
+      { path: '/lidos', component: HomeComponent },
+    ],
+  },
+  { path: 'sobre', component: AboutComponent },
+];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,12 +33,11 @@ import { AboutComponent } from './pages/about/about.component';
     FooterComponent,
     FiltroComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
   ],
-  imports: [
-    BrowserModule,
-  ],
+  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  exports: [RouterModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
