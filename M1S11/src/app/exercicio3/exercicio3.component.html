@@ -1,0 +1,6 @@
+<div *ngFor="let item of arrayFotos" class="card" style="width: 18rem;">
+    <img [src]="item.url" class="card-img-top" [alt]="item.description">
+    <div class="card-body">
+      <p class="card-text">{{item.description}}</p>
+    </div>
+  </div>
