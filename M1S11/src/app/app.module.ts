@@ -7,6 +7,7 @@ import { CaptalizePhillipsPipe } from './pipes/captalize-phillips.pipe';
 import { NavComponent } from './nav/nav.component';
 import { Exercicio3Component } from './exercicio3/exercicio3.component';
 import { Exercicio4Component } from './exercicio4/exercicio4.component';
+import { Exercicio5Component } from './exercicio5/exercicio5.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { Exercicio4Component } from './exercicio4/exercicio4.component';
     CaptalizePhillipsPipe,
     NavComponent,
     Exercicio3Component,
-    Exercicio4Component
+    Exercicio4Component,
+    Exercicio5Component
   ],
   imports: [
     BrowserModule,
