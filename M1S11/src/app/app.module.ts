@@ -8,6 +8,8 @@ import { NavComponent } from './nav/nav.component';
 import { Exercicio3Component } from './exercicio3/exercicio3.component';
 import { Exercicio4Component } from './exercicio4/exercicio4.component';
 import { Exercicio5Component } from './exercicio5/exercicio5.component';
+import { Exercicio7Component } from './exercicio7/exercicio7.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { Exercicio5Component } from './exercicio5/exercicio5.component';
     NavComponent,
     Exercicio3Component,
     Exercicio4Component,
-    Exercicio5Component
+    Exercicio5Component,
+    Exercicio7Component,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
