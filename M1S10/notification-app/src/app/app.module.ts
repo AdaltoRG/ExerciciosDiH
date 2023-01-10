@@ -17,9 +17,9 @@ const routes: Routes = [
     component: HomeComponent,
     children: [
       {
-        path: '/todos', component: HomeComponent },
-      { path: '/nao-lidos', component: HomeComponent },
-      { path: '/lidos', component: HomeComponent },
+        path: 'todos', component: HomeComponent },
+      { path: 'nao-lidos', component: HomeComponent },
+      { path: 'lidos', component: HomeComponent },
     ],
   },
   { path: 'sobre', component: AboutComponent },

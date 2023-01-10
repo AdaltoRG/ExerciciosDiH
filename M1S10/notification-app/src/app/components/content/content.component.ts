@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { INotificacao } from 'src/app/models/notificacao.model';
 import { NOTIFICATIONS_MOCK } from 'src/app/utils/notifications-mock';
 
@@ -24,5 +24,9 @@ export class ContentComponent implements OnInit {
 
       return item;
     });
+  }
+  action(){
+    console.log('teste');
+    
   }
 }
